@@ -4,7 +4,7 @@ var cargarPagina = function () {
 }
 var cargarPokemon = function () {
 	var url = "http://pokeapi.co/api/v2/pokemon/";
-	$.getJSON(url,function (response) {
+	$.getJSON(url,function (response) {	
 		var pokemon = response.results;	
 		mostarPokemon(pokemon);
 	});	
@@ -22,11 +22,18 @@ var mostarPokemon = function (pokemon) {
 	}, this);		
 };
 
-var mostrarUrlParaDetalles = function () {
-	var url = $(this).data("url");
-	$.getJSON(url,function (response) {
-		var especie =response.species;
-	})
-	}
+// var mostrarUrlParaDetalles = function () {
+// 	var url = $(this).data("url");	
+// 	var partes = url.split("/");
+// 	var pokemon = partes[5];
+// 	var especies = "-species";	
+// 	var arreglo = [pokemon,especies];
+//     partes[5] = arreglo.join("");
+// 	var url2 = partes.join("/");		
+	
+// 	$.getJSON(url2,function (response) {
+// 		console.log(response.color.name);
+// 	});
+// }
 
-$(document).ready(cargarPagina);
+// $(document).ready(cargarPagina);
