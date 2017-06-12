@@ -4,12 +4,38 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<title>Pokedex</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<nav>
+    	<div class="nav-wrapper blue darken-4">
+      	<a href="#" class="brand-logo center ">Pokedex</a>
+    	</div>
+	</nav>
+	<section class="row pokemons">
+		<article class="col s4" href="#modal1" >
+			<img class="imagenes-pokemon center" src="./assest/img/eve.png" alt="">
+			<a class="waves-effect waves-light " href="#modal1">Nombre:pokemon</a>			
+		</article>
+	</section>
+	  <!-- Modal Trigger -->
+  
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <p id="color"> </p>
+	  <p id="habitad"></p>
+      <p id="genera"> </p>
+	  <p id="shepe"></p>
+    </div>    
+  </div>
+	
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script src="./js/app.js"></script>  
 </body>
 </html>
